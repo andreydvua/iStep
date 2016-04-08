@@ -2,16 +2,44 @@
 <html>
 	<head>
 	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
 	</head>
 	<body>
-	<form>
 		<div>
-			<input type="text"/> 
-			<label>First name :</br>
-			</label>
+			<form>
+				<p>
+				<label for="555">First name</label>
+				<input id="555" type="text" name="Name">
+				</p>
+				<p>
+				<input type="text" name="username">
+					<label>Second name</label>
+				</p>
+				<p>
+				<input type="checkbox" name="username">
+					<label>Username</label>
+				</p>
+				<p>
+				<input type="text" name="username">
+					<label>Username</label>
+				</p>
+				<p>
+				<textarea name="comment">Добавьте сюда свой комментарий</textarea>
+				</p>
+			</form>
+				<p>
+					<button onclick="getName()">Get name</button>
+				</p>
+				<script type="text/javascript">
+					function getName(){
+						alert( $('#555').val() );
+					}
+
+				</script>
+
+
 
 		</div>
-	</form>
 	<form>
 		
 	</form>
