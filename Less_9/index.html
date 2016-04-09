@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<form>
+				<p>
+				<label for="555">First name</label>
+				<input id="555" type="text" name="FName">
+				</p>
+				<p>
+				<input type="text" name="SName">
+					<label>Second name</label>
+				</p>
+				<p>
+				<label>Sex</label>
+				<input type="radio" name="M">
+					<label>Male</label>
+				<input type="radio" name="F">
+					<label>Female</label>
+				</p>
+				<p>
+				<input type="text" name="username">
+					<label>Username</label>
+				</p>
+				<p>
+				<textarea name="comment">Добавьте сюда свой комментарий</textarea>
+				</p>
+			</form>
+				<p>
+					<button onclick="getName()">Get name</button>
+				</p>
+				<script type="text/javascript">
+					function getName(){
+						alert( $('#555').val() );
+					}
+
+				</script>
+
+
+
+		</div>
+	<form>
+		
+	</form>
+	</body>
+</html>
