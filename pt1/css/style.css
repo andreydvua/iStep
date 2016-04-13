@@ -92,16 +92,40 @@ div#logo {
     text-align: right;
 }
 #logo h1 {
-    font-size: 40px;
+    font-size: 3.5em;
 }
 #logo h1>span {
     color: #EBE4DE;
 }
 #logo h1 span+span {
-    color: #0A8CA3;
+    color: #0a8ca3;
+}
+h2 {
+    color: #333;
+    font-size: 1.8em;
+}
+h3 {
+    color: #0a8ca3;
+    font-size: 22px;
+}
+h4 {
+    color: #333;
+    font-size: 1.2em;
+}
+h5 {
+    color: #0a8ca3;
+    font-size: 1em;
+
+}
+h6 {
+    color: #ccc;
+    font-size: .7em;
+
 }
 #logo p {
-    color: #EBE4DE;    
+    color: #EBE4DE;
+    font-size: 1.2em;
+
 }
 .scale_x {position: absolute;
     color: #fff;
@@ -138,13 +162,9 @@ menu a {
     padding: 0 2%;
 }
 menu h3 {
-    color: #0a8ca3;
-    font-size: 22px;
     margin: 0 auto;
 }
 menu h6 {
-    color: #ccc;
-    font-size: 12px;
     margin: 0 auto;
 }
 .menu_list {
@@ -165,7 +185,7 @@ main>section {
     display: table-cell;
 }
 #content_info_wrap {
-    width: 15%;
+    width: 20%;
     padding: 1.5em 0;
     text-align: right;
 }
@@ -173,16 +193,19 @@ main>section {
     padding: 1em;
 }
 #content_info h3 {
-    margin: 60px auto;
+    margin: 60px auto 30px;
 }
 #content_info h4 {
-    padding-bottom: 35px;
+    padding-top: 35px;
+}
+#content_info span {
+    font-size: 1em;
 }
 /* ....................... Style Main article ....................... */
 #content img {
-    width: 54vw;
+    width: 53vw;
     min-width: 400px;
-    max-width: 580px;
+    max-width: 555px;
 }
 main #content {
     vertical-align: top;
@@ -195,7 +218,7 @@ main #content article {
     margin: 1.5em auto;
 }
 #content h2 {
-    margin-bottom: 1em; 
+    margin-bottom: .5em;
 }
 #content p {
     padding: .5em 0; 
@@ -256,9 +279,7 @@ aside > section {background: rgb (214, 194, 214);
     display: table-row;
 }
 aside section h3 {
-    color: #0a8ca3;
-    font-size: 20px;
-    margin: 10px auto;
+    margin: 25px auto 10px;
 }
 div.row > div {
     display: inline-table;
@@ -278,11 +299,27 @@ div.row > div {
     text-align: center;
     padding-top: 25px;
 }
-
-
-#cell_img {
-    width: 25%;
+#patrocionadores h3 {
+    
 }
-#cell_img img {
+/* ....................... Style Section Noticias Recomendadas ....................... */
+section.recNoticias_t {
+    display: table;
+}
+.cell_img, .cell_title {
+    display: table-cell;    
+}
+.cell_img {
+    width: 25%;
+    float: left;    
+}
+.cell_img img {
     border: 4px solid #3399cc;
+    width: 100%;
+}
+.cell_title {
+    padding-left: 20px; 
+}
+.cell_title p {
+    font-size: .5em;
 }
