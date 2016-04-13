@@ -72,16 +72,23 @@ html {
   font-family: inherit;
 }
 /* ....................... Project style ....................... */
+body {
+    background-color: #fff;    
+    max-width: 1000px;
+    min-width: 768px;
+    margin: 0 auto;
+
+}
 header {
     display: table;
+    width: 100%;
 }
 header > div {
     display: table-cell;
 }
-div #logo {
-    padding: 50px 50px;
-    width: ;
-    display: table-column;
+div#logo {
+    width: 40%;
+    padding: 20px 60px 40px 0;
     text-align: right;
 }
 #logo h1 {
@@ -94,13 +101,188 @@ div #logo {
     color: #0A8CA3;
 }
 #logo p {
-    color: #EBE4DE;
+    color: #EBE4DE;    
 }
-.scale_x {
+.scale_x {position: absolute;
     color: #fff;
     background-color: #EBE4DE;
     width: 240pt;
     padding-left: 5px;
     font-size: 2em;
     transform: scaleX(-1);
+}
+.cont_table {
+    width: 100%;
+    display: table;    
+}
+.row {
+    display: table-row;
+}
+.tCell {
+    display: table-cell;
+}
+div#container {
+    display: inline-block;
+    width: 75%;
+    padding-left: 3%;
+}
+/* ....................... Style container MENU ....................... */
+menu {
+    width: 100%;
+    min-width: 554px;
+    display: table;
+    padding-bottom: 15px;
+}
+menu a {
+    display: table-cell;
+    padding: 0 2%;
+}
+menu h3 {
+    color: #0a8ca3;
+    font-size: 22px;
+    margin: 0 auto;
+}
+menu h6 {
+    color: #ccc;
+    font-size: 12px;
+    margin: 0 auto;
+}
+.menu_list {
+    border-right: 5px solid #f5f1f1;
+}
+.menu_first {
+    padding-left: 0;
+}
+.menu_last {
+    padding-right: 0;
+    width: 100px;
+}
+/* ....................... Style Main ....................... */
+main {display: table;
+    background-color: #ebe4de;
+}
+main>section {
+    display: table-cell;
+}
+#content_info_wrap {
+    width: 15%;
+    padding: 1.5em 0;
+    text-align: right;
+}
+#content_info {
+    padding: 1em;
+}
+#content_info h3 {
+    margin: 60px auto;
+}
+#content_info h4 {
+    padding-bottom: 35px;
+}
+/* ....................... Style Main article ....................... */
+#content img {
+    width: 54vw;
+    min-width: 400px;
+    max-width: 580px;
+}
+main #content {
+    vertical-align: top;
+    text-align: justify;
+    max-width: 580px;
+}
+main #content article {
+    border-left: 2px ridge #fff;
+    padding: 0 1.5em;
+    margin: 1.5em auto;
+}
+#content h2 {
+    margin-bottom: 1em; 
+}
+#content p {
+    padding: .5em 0; 
+}
+/* ....................... Style Comentario ....................... */
+section#coments {
+    padding: 1em;
+    border-top: 2px ridge #fff;
+    background-color: #ebe4de;
+}
+/* ....................... Style FORM comentario ....................... */
+#container form {
+        padding: 1em 1em 3em;
+    border-top: 2px ridge #fff;
+    background-color: #ebe4de;
+}
+#container form legend {
+    font-size: 1.8em;
+    margin: .5em 0;
+}
+#container form label {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container form div {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+}
+#container form input,  #container form textarea {
+    background-color: #f1ede9;
+    border: 2px solid #ded3cb;
+    width: 100%;
+    font-size: 1em;
+}
+#container form textarea {
+    height: 100%;
+}
+#container form button {
+    background-color: #d3c5b9;
+    color: #f1ede9;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    float: right;
+}
+.pad_left {
+    padding-left: 1.5em;
+}
+
+/* ....................... Style ASIDE ....................... */
+aside {
+    float: right;    
+    width: 25%;
+    padding: .5em 1.5em;
+}
+aside > section {background: rgb (214, 194, 214);
+    display: table-row;
+}
+aside section h3 {
+    color: #0a8ca3;
+    font-size: 20px;
+    margin: 10px auto;
+}
+div.row > div {
+    display: inline-table;
+}
+#empty {
+    height: 55px;
+}
+/* ....................... Style Section Patrocionadores ....................... */
+#patrocionadores p {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    border: 1px solid #d5d5d5;
+    background-color: #e7e7e7;
+    color: #fff;
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+#cell_img {
+    width: 25%;
+}
+#cell_img img {
+    border: 4px solid #3399cc;
 }
