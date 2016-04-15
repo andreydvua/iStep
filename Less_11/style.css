@@ -1,0 +1,33 @@
+.pat1 {
+	background-color: red;	
+}
+.pat2 {
+	
+	background-color: yellow;
+}
+.pat3 {
+	background-color: blue;
+}
+.pat4 {
+	background-color: green;
+}
+.pat5 {
+	background-color: gray;
+}.pat6 {
+	background-color: navy;
+}
+div {
+	margin-bottom:20px;
+}
+table {
+	border:2px solid #000;
+}
+
+.above-element{
+	position: absolute;
+	z-index: 50;
+	top: 50%;
+	height: 150px;
+	background-color: black;
+
+}
