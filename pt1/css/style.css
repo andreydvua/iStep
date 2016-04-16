@@ -1,0 +1,491 @@
+/* ....................... RESET Style ....................... */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, 
+    strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    color: #555555;
+    }
+    a{
+    text-decoration: none;
+    }
+    ul li{
+    list-style-type: none;
+ }
+ /* ....................... Add Fonts ....................... */
+    /* Regular */
+    @font-face {
+        font-family: 'League Gothic';
+        src: url('font/leaguegothic-regular-webfont.eot');
+        src: url('font/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/leaguegothic-regular-webfont.woff') format('woff'),
+            url('font/leaguegothic-regular-webfont.ttf') format('truetype'),
+            url('font/leaguegothic-regular.svg#league_gothic_italicregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Italic */
+    @font-face {
+        font-family: 'League Gothic';
+        src: url('font/leaguegothic-italic-webfont.eot');
+        src: url('font/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/leaguegothic-italic-webfont.woff') format('woff'),
+            url('font/leaguegothic-italic-webfont.ttf') format('truetype'),
+            url('font/leaguegothic-italic.svg#league_gothicregular') format('svg');
+        font-weight: normal;
+        font-style: italic;
+    }
+    /* Condensed */
+    @font-face {
+        font-family: 'League Gothic Condensed';
+        src: url('font/leaguegothic-condensed-regular-webfont.eot');
+        src: url('font/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+            url('font/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+            url('font/leaguegothic-condensed-regular.svg#league_gothic_condensed-Rg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Condensed Italic */
+    @font-face {
+        font-family: 'League Gothic Condensed';
+        src: url('font/leaguegothic-condensed-italic-webfont.eot');
+        src: url('font/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+            url('font/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+            url('font/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+            url('font/leaguegothic-condensed-italic.svg#league_gothic_condensed_itaRg') format('svg');
+        font-weight: normal;
+        font-style: italic;
+    }
+/* ....................... Width & Height including in border ....................... */
+    html {
+    box-sizing: border-box;
+    font-family: 'League Gothic', serif;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+/* ....................... Project style ....................... */
+    body {
+        background-color: #fff;    
+    }
+        header {
+        max-width: 960px;
+        min-width: 768px;       
+        margin: 0 auto 40px;
+        
+        background-image: url('../img/featured.png');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .header div.row {
+        text-align: right;
+        
+
+    }
+    .wrapper {
+        margin: 0 auto;
+        max-width: 960px;
+        min-width: 768px;        
+    }
+    h2 {
+        color: #333;
+        font-size: 1.8em;
+    }
+    h3 {
+        color: #0a8ca3;
+        font-size: 22px;
+    }
+    h4 {
+        color: #333;
+        font-size: 1.2em;
+    }
+    h5 {
+        color: #0a8ca3;
+        font-size: 1em;
+    }
+    h6 {
+        color: #ccc;
+        font-size: .7em;
+    }
+    .cont_table {
+        width: 100%;
+        display: table;    
+    }
+    .row {
+        display: table-row;
+    }
+    .tCell {
+        display: table-cell;
+    }
+/* ....................... Style TOP MENU ....................... */
+    .top_menu {
+        clear: both;
+        font-family: 'Arial Narrow', sans-serif;
+        font-size: .8em;
+    }
+    div.logo {
+        padding-right: 60px;
+        text-align: right;
+    }
+    .logo h1 {
+        font-size: 3.5em;
+    }
+    .logo h1>span {
+        color: #EBE4DE;
+    }
+    .logo h1 span+span {
+        color: #0a8ca3;
+    }
+    .logo p {
+        color: #EBE4DE;
+        font-size: 1.2em;
+    }
+    .find {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #EBE4DE;
+    width: 240px;
+    height: 30px;
+    font-size: 2em;
+    }
+    .find p {        
+        text-align: left;
+        transform: scaleX(-1);
+        color: #fff;
+        position: relative;
+        top: -5px;
+    }
+    .topMenu_block {
+    }
+    .stick {
+        min-width: 145px;
+        vertical-align: top;
+    }
+    .H_stick {
+        text-align: center;
+        display: inline-block;
+        height: 100px;
+        width: 50px;
+        background: #5fb7c6;
+        margin-left: 20px;        
+    }
+    .H_stick img {
+        margin-top: 70px;
+    }
+/* ....................... Style container  ....................... */
+    div.container {
+        position: relative;
+        z-index: 5;
+        display: inline-block;
+        width: 72%;
+        margin-left: 20px;
+    }    
+    menu {
+        width: 100%;
+        min-width: 554px;
+        display: table;
+        padding-bottom: 15px;
+    }
+    menu a {
+        display: table-cell;
+        padding: 0 2%;
+    }
+    menu h3 {
+        margin: 0 auto;
+    }
+    menu h6 {
+        margin: 0 auto;
+    }
+    .menu_list {
+        border-right: 5px solid #f5f1f1;
+    }
+    .menu_first {
+        padding-left: 0;
+    }
+    .menu_last {
+        padding-right: 0;
+        width: 100px;
+    }
+/* ....................... Style container Main ....................... */
+    main {display: table;
+        background-color: #ebe4de;
+    }
+    main>section {
+        display: table-cell;
+    }
+    #content_info_wrap {
+        width: 20%;
+        padding: 1.5em 0;
+        text-align: right;
+    }
+    #content_info {
+        padding: 1em;
+    }
+    #content_info h3 {
+        margin: 60px auto 30px;
+    }
+    #content_info h4 {
+        padding-top: 35px;
+    }
+    #content_info span {
+        font-size: 1em;
+    }
+/* ....................... Style Main article ....................... */
+    #content img {
+        width: 52vw;
+        min-width: 400px;
+        max-width: 555px;
+    }
+    main #content {
+        vertical-align: top;
+        text-align: justify;
+        max-width: 580px;
+    }
+    main #content article {
+        border-left: 2px ridge #fff;
+        padding: 0 1.5em;
+        margin: 1.5em auto;
+    }
+    #content h2 {
+        margin-bottom: .5em;
+    }
+    #content p {
+        padding: .5em 0; 
+    }
+/* ....................... Style Comentario ....................... */
+    section#coments {
+        padding: 20px 0;
+        border-top: 2px ridge #fff;
+        background-color: #ebe4de;
+    }
+    section#coments h3 {
+        padding: 20px;
+    }
+    section#coments div {
+        padding: 20px;    
+    }
+    section#coments div#comment1 {
+        background-color: #f1ede9;
+    }
+    section#coments div img {
+        padding: 0 20px;
+        float: left;
+    }
+    section#coments div#comment2 img {
+        padding-left: 110px;
+    }
+    section#coments div p {
+        font-size: .8em;    
+    }
+    section#coments div p.comments_title {
+        color: #333;
+        font-size: 1.5em;    
+    }
+    section#coments div p.comments_title > span {
+        color: #afadac;
+        font-size: .7em;    
+    }
+    section#coments div p.comments_title > span + span {
+        color: #1ea1b5;
+    }
+/* ....................... Style FORM comentario ....................... */
+    .container form {
+        padding: 1em 1em 3em;
+        border-top: 2px ridge #fff;
+        background-color: #ebe4de;
+    }
+    .container form legend {
+        font-size: 1.8em;
+        margin: .5em 0;
+    }
+    .container form label {
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container form div {
+        display: inline-block;
+        width: 49.5%;
+        vertical-align: top;
+    }
+    .container form input,  .container form textarea {
+        background-color: #f1ede9;
+        border: 2px solid #ded3cb;
+        width: 100%;
+        font-size: 1em;
+    }
+    .container form textarea {
+        height: 100%;
+    }
+    .container form button {
+        background-color: #d3c5b9;
+        color: #f1ede9;
+        padding: 5px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        float: right;
+    }
+    .pad_left {
+        padding-left: 1.5em;
+    }
+/* ....................... Style ASIDE ....................... */
+    aside {
+        float: right;    
+        width: 25%;
+        padding-left: 20px;
+    }
+    aside > section {background: rgb (214, 194, 214);
+        display: table-row;
+    }
+    aside section h3 {
+        margin: 25px auto 10px;
+    }
+    .empty {
+        height: 55px;
+    }
+/* ....................... Style Section Patrocionadores ....................... */
+    section#patrocionadores ul {
+        border-spacing: 5px;
+    }
+    section#patrocionadores p {
+        border: 1px solid #d5d5d5;   
+        height: 85px;
+        background-color: #e7e7e7;
+        color: #fff;
+        text-align: center;
+        padding-top: 25px;
+    }
+/* ....................... Style Section Noticias Recomendadas ....................... */
+    div.cell_img, div.cell_title {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        border-bottom: 2px ridge #ccc;
+    }
+    div.cell_img img {
+        max-width: 55px;
+        border: 4px solid #3399cc;
+    }
+    div.cell_title {
+        vertical-align: top;
+        padding-left: 20px; 
+    }
+    div.cell_title p {
+        font-size: 12px;
+    }
+/* ....................... Style Section galFlickr ....................... */
+    section#galFlickr li {
+        display: inline;
+    }
+    section#galFlickr img {
+        border: 4px solid #3399cc;   
+        width: 48px;
+        margin: 2px 2px;
+    }
+/* ....................... Style Footer ....................... */
+    footer {        
+        position: relative;
+        top: -40px;
+        width: 100%;
+        min-height: 420px;
+        background-color: #139db2;
+        background-image: url('../img/foot_texture_bg.png');
+    }
+    footer section div {
+        font-size: 12px;
+        display: inline-block;
+        width: 25%;
+        text-align: justify;
+        vertical-align: top;
+        color: #333;
+        padding: 0 25px;
+    }
+    footer section {
+        margin: 0 auto;
+        padding-top: 90px;
+        max-width: 960px;
+        min-width: 768px;
+        display: table;
+        text-align: center;
+    }
+    footer section h2 {
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    footer section p {
+        margin-bottom: 10px;
+    }
+    footer section p.text_white {
+        color: #fff;
+    }
+    #h_line_top {
+        border-top: 2px solid #44afc2;
+        padding-top: 10px;
+    }
+    #h_line_b {
+        border-bottom: 2px solid #44afc2;
+        padding-bottom: 15px;
+    }
+    #foot_video img {
+        width: 100%;
+        border: 5px solid #44afc2;    
+    }
+    div#social img {
+        float: right;
+    }
+/* ....................... Style Footer Form ....................... */
+    footer form div.row {
+        height: 45px;
+        padding: 0;
+    }
+    footer form p.col1_contForm {
+        padding: 5px;
+        background-color: rgb(97,189,204);
+        min-width: 60px;
+    }
+    footer form p.col2_contForm {
+        border: 2px solid rgb(130,202,214);
+        padding: 0;
+    }
+    div#contact_form {
+        padding-right: 0;
+    }
+    #contact_form p {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+    #contact_form label {
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #contact_form form input,  #contact_form form textarea {
+        opacity: .5;
+        width: 11vw;
+        font-size: 12px;
+    }
+    #contact_form form button {
+        background-color: rgb(130,202,214);
+        color: #f1ede9;
+        padding: 7px 13px 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        float: right;
+    }
+/* ....................... Style post Footer ....................... */
+    .postfooter {
+        width: 220px;
+        height: 100px;
+        background-color: #ebe4de;
+        position: relative;
+        z-index: 4;
+        top: -80px;
+        left: 50%;
+        padding: 20px 20px 50px;
+    }
