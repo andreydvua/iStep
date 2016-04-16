@@ -74,20 +74,25 @@
 /* ....................... Project style ....................... */
     body {
         background-color: #fff;    
+    }
+        header {
         max-width: 960px;
-        min-width: 768px;
+        min-width: 768px;       
         margin: 0 auto;
-    }    
-    header {
-        display: table;
-        width: 100%;
+        
         background-image: url('../img/featured.png');
         background-repeat: no-repeat;
         background-position: right;
     }
-    header div.tCell {
-        display: inline-block;
-        vertical-align: middle;
+    .header div.row {
+        text-align: right;
+        
+
+    }
+    .wrapper {
+        margin: 0 auto;
+        max-width: 960px;
+        min-width: 768px;        
     }
     h2 {
         color: #333;
@@ -120,41 +125,68 @@
         display: table-cell;
     }
 /* ....................... Style TOP MENU ....................... */
-    header div#top_menu {
+    .top_menu {
+        clear: both;
         font-family: 'Arial Narrow', sans-serif;
         font-size: .8em;
     }
-    .scale_x {position: absolute;
-    color: #fff;
-    background-color: #EBE4DE;
-    width: 240pt;
-    padding-left: 5px;
-    font-size: 2em;
-    transform: scaleX(-1);
-    }
-    div#logo {
-        width: 40%;
-        padding: 20px 60px 40px 0;
+    .logo {
+        padding: 20px 120px 40px 0;
         text-align: right;
     }
-    #logo h1 {
+    .logo h1 {
         font-size: 3.5em;
     }
-    #logo h1>span {
+    .logo h1>span {
         color: #EBE4DE;
     }
-    #logo h1 span+span {
+    .logo h1 span+span {
         color: #0a8ca3;
     }
-    #logo p {
+    .logo p {
         color: #EBE4DE;
         font-size: 1.2em;
+    }
+    .find {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #EBE4DE;
+    width: 240px;
+    height: 30px;
+    font-size: 2em;
+    }
+    .find p {        
+        text-align: left;
+        transform: scaleX(-1);
+        color: #fff;
+        position: relative;
+        top: -5px;
+    }
+    .topMenu_block {
+    }
+    .stick {
+        min-width: 145px;
+        vertical-align: top;
+    }
+    .H_stick {
+        text-align: center;
+        display: inline-block;
+        height: 100px;
+        width: 50px;
+        background: #5fb7c6;
+        margin-left: 20px;        
+    }
+    .H_stick img {
+        margin-top: 70px;
+    }
+/* ....................... Style container  ....................... */
+    div.container {
+        position: relative;
+        z-index: 5;
+        display: inline-block;
+        width: 75%;
     }    
-div#container {
-    display: inline-block;
-    width: 75%;
-}
-/* ....................... Style container MENU ....................... */
     menu {
         width: 100%;
         min-width: 554px;
@@ -181,7 +213,7 @@ div#container {
         padding-right: 0;
         width: 100px;
     }
-/* ....................... Style Main ....................... */
+/* ....................... Style container Main ....................... */
     main {display: table;
         background-color: #ebe4de;
     }
@@ -264,34 +296,34 @@ div#container {
         color: #1ea1b5;
     }
 /* ....................... Style FORM comentario ....................... */
-    #container form {
-        padding: 1em 1em 0em;
+    .container form {
+        padding: 1em 1em 3em;
         border-top: 2px ridge #fff;
         background-color: #ebe4de;
     }
-    #container form legend {
+    .container form legend {
         font-size: 1.8em;
         margin: .5em 0;
     }
-    #container form label {
+    .container form label {
         font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
     }
-    #container form div {
+    .container form div {
         display: inline-block;
         width: 49.5%;
         vertical-align: top;
     }
-    #container form input,  #container form textarea {
+    .container form input,  .container form textarea {
         background-color: #f1ede9;
         border: 2px solid #ded3cb;
         width: 100%;
         font-size: 1em;
     }
-    #container form textarea {
+    .container form textarea {
         height: 100%;
     }
-    #container form button {
+    .container form button {
         background-color: #d3c5b9;
         color: #f1ede9;
         padding: 5px 20px;
@@ -314,10 +346,7 @@ div#container {
     aside section h3 {
         margin: 25px auto 10px;
     }
-    div.row > div {
-        display: inline-table;
-    }
-    #empty {
+    .empty {
         height: 55px;
     }
 /* ....................... Style Section Patrocionadores ....................... */
@@ -359,9 +388,9 @@ div#container {
         margin: 2px 2px;
     }
 /* ....................... Style Footer ....................... */
-    footer {
-        position: absolute;
-        left: 0;
+    footer {        
+        position: relative;
+        top: -40px;
         width: 100%;
         min-height: 420px;
         background-color: #139db2;
@@ -449,13 +478,13 @@ div#container {
         float: right;
     }
 /* ....................... Style post Footer ....................... */
-    #postfooter {
+    .postfooter {
         width: 220px;
         height: 100px;
         background-color: #ebe4de;
         position: relative;
-        top: 380px;
+        z-index: 4;
+        top: -80px;
         left: 50%;
-        margin: 0;
         padding: 20px 20px 50px;
     }
