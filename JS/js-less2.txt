@@ -1,0 +1,71 @@
+underfine
+null
+
+/* ------
+true
+false
+
+integer --- parseInt 
+float   --- parseFlo
+
+string
+
+objact
+
+("") ? 'ok' : 'not ok'  ---- not ok
+
+Вищій пріоритет string  
+
+{} == false
+({}) ? 'ok' : 'not ok'  ----- ok
+
+parseInt("5")+5         ------ 10
+String(5)
+
+Масиви 
+[1,2,3] ['a','b','c'] [1,'b',3]
+
+Reserv word
+break
+case
+
+ftp://91.193.236.10/pub/docs/linux-support/programming/JavaScript/
+
+
+typeof
+
+typeof 5
+"number"
+typeof 'lkjhaskjda'
+"string"
+typeof ''
+"string"
+typeof null
+"object"
+
+
+instanceof
+"5" instanceof String
+false
+
+
+! - оператор не
+&&    -і 
+||    -або
+
+Рівняння --- 20x2+48x+8=0
+
+
+var D=(48*48)-(4*20*8);
+
+var a=20, b=48, c=8;
+
+x1=
+
+
+ПОРТФОЛІО
+1.Фото 
+2.Summury
+3.Skills
+4.Expirient
+5.WorkExample
